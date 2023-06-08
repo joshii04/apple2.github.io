@@ -1,17 +1,26 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 500vh;
+    background: #000;
+  }
+  
 
+  
+  .info {
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    padding: 20px;
+    color: #333;
+  }
 
-.scroll-section {
-    position: absolute;
+  canvas {
+    position: fixed;
+    left: 0;
+    top: 0;
     width: 100%;
-    opacity: 0;
-    transition: opacity 0.5s;
-}
-
-.scroll-image {
-    width: 100%;
-    height: auto;
-}
-
-.scroll-section.active {
-    opacity: 1;
-}
+    height: 100%;
+    z-index: 1;
+  }
+  
